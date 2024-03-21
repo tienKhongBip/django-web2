@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('debug', True)
 
-ALLOWED_HOSTS = ['huyamazingshop.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -143,6 +143,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-
-import django_heroku
-django_heroku.settings(locals())
